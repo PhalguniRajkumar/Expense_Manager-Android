@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+        <TextView
+        android:id="@+id/dates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="56dp"
+        android:text="Date:" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dates"
+        android:layout_below="@+id/dates"
+        android:layout_marginTop="52dp"
+        android:text="Price:" />
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/price"
+        android:layout_below="@+id/price"
+        android:layout_marginTop="52dp"
+        android:text="Event:" />
+
+    <EditText
+        android:id="@+id/dd"
+        android:hint="dd-Mmm-yyyy (eg. 02-Jan-2014)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dates"
+        android:layout_alignParentRight="true"
+        android:ems="10" >
+         <requestFocus />
+      </EditText>    
+
+    <EditText
+        android:id="@+id/rs"
+        android:hint="Enter Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/detail"
+        android:layout_alignParentRight="true"
+        android:ems="10" >
+
+       
+    </EditText>
+
+    <EditText
+        android:id="@+id/data"
+        android:hint="Enter Event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/detail"
+        android:layout_alignParentRight="true"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/save"
+        android:onClick="save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/detail"
+        android:layout_marginTop="69dp"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/back"
+        android:onClick="back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/save"
+        android:layout_alignParentRight="true"
+        android:text="Back" />
+
+</RelativeLayout>
