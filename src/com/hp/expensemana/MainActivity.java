@@ -102,7 +102,7 @@ public class MainActivity extends Activity {
 		db=openOrCreateDatabase("mydb", Context.MODE_PRIVATE, null);
 
 		
-		//creating table
+		//creating  table
 		try{
 		db.execSQL("create table expense (ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,date date,event varchar(20),amount varchar(10),mode varchar(15));");
 		//Toast.makeText(this, "Table Created", Toast.LENGTH_LONG).show();
